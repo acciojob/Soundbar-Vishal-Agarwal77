@@ -8,10 +8,8 @@ function playsound(soundfile){
 	audio_source.src=`sound/${soundfile}`;
 	audio_ele.appendChild(audio_source);
 	audio_ele.load();
-	audio_ele.play()
-	.catch((error)=>{
-		return false;
-	})
+	audio_ele.play();
+	return false;
 }
 function stopsound() {
 	const audio_ele=document.getElementById("audio");
