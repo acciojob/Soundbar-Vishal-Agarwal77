@@ -9,7 +9,7 @@ function playsound(soundfile){
 	audio_ele.appendChild(audio_source);
 	audio_ele.load();
 	audio_ele.play();
-	return false;
+	return true;
 }
 function stopsound() {
 	const audio_ele=document.getElementById("audio");
