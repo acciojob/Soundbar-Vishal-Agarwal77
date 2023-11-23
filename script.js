@@ -10,8 +10,7 @@ function playsound(soundfile){
 	audio_ele.load();
 	audio_ele.play()
 	.catch((error)=>{
-		console.log(error);
-		alert("failed");
+		return false;
 	})
 }
 function stopsound() {
